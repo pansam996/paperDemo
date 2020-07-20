@@ -9,7 +9,7 @@ np.random.seed(123)
 
 import pandas as pd
 import numpy as np
-# import cv2
+import cv2
 from PIL import Image
 
 import os
