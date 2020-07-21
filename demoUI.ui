@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1184</width>
-    <height>712</height>
+    <height>719</height>
    </rect>
   </property>
   <property name="font">
@@ -93,10 +93,10 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>340</x>
       <y>10</y>
-      <width>261</width>
-      <height>31</height>
+      <width>251</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -110,7 +110,8 @@
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="text">
-     <string>Learned Latent Class Embedding</string>
+     <string>Learned Latent
+ Class Embedding</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -162,7 +163,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>410</x>
-      <y>340</y>
+      <y>330</y>
       <width>113</width>
       <height>32</height>
      </rect>
@@ -204,7 +205,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>640</x>
-      <y>340</y>
+      <y>330</y>
       <width>151</width>
       <height>32</height>
      </rect>

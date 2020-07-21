@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1184, 712)
+        MainWindow.resize(1184, 719)
         font = QtGui.QFont()
         font.setKerning(False)
         MainWindow.setFont(font)
@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         self.label_9.setFont(font)
         self.label_9.setObjectName("label_9")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(330, 10, 261, 31))
+        self.pushButton_2.setGeometry(QtCore.QRect(340, 10, 251, 41))
         font = QtGui.QFont()
         font.setPointSize(13)
         font.setBold(True)
@@ -67,7 +67,7 @@ class Ui_MainWindow(object):
         self.textBrowser.setFont(font)
         self.textBrowser.setObjectName("textBrowser")
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_3.setGeometry(QtCore.QRect(410, 340, 113, 32))
+        self.pushButton_3.setGeometry(QtCore.QRect(410, 330, 113, 32))
         font = QtGui.QFont()
         font.setPointSize(13)
         font.setBold(True)
@@ -81,7 +81,7 @@ class Ui_MainWindow(object):
         self.textBrowser_2.setFont(font)
         self.textBrowser_2.setObjectName("textBrowser_2")
         self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_4.setGeometry(QtCore.QRect(640, 340, 151, 32))
+        self.pushButton_4.setGeometry(QtCore.QRect(640, 330, 151, 32))
         font = QtGui.QFont()
         font.setPointSize(13)
         font.setBold(True)
@@ -220,7 +220,8 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "DEMO"))
         self.label.setText(_translate("MainWindow", "test picture"))
         self.label_9.setText(_translate("MainWindow", "Predict Class : "))
-        self.pushButton_2.setText(_translate("MainWindow", "Learned Latent Class Embedding"))
+        self.pushButton_2.setText(_translate("MainWindow", "Learned Latent\n"
+" Class Embedding"))
         self.pushButton.setText(_translate("MainWindow", "Load Test Picture"))
         self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
