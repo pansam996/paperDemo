@@ -129,9 +129,35 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         tree = KDTree(cand_list)
         dist_5, index_5 = tree.query(CE, k=5)
         pred_images = [dic_class2name[int(math.floor(index/SAMPLE_SIZE))] for index in index_5[0]]
-        print(pred_images)
+        # print(pred_images)
+        self.label_2.setText('1. '+pred_images[0])
+        self.label_5.setText('2. '+pred_images[1])
+        self.label_6.setText('3. '+pred_images[2])
+        self.label_7.setText('4. '+pred_images[3])
+        self.label_8.setText('5. '+pred_images[4])
+
         image_name = [image_name_list[index] for index in index_5[0]]
-        print(image_name)
+        # print(image_name)
+        pixmap = QPixmap(image_name[0])
+        self.label_12.setPixmap(pixmap)
+        self.label_12.setScaledContents(True)
+
+        pixmap = QPixmap(image_name[1])
+        self.label_14.setPixmap(pixmap)
+        self.label_14.setScaledContents(True)
+
+        pixmap = QPixmap(image_name[2])
+        self.label_15.setPixmap(pixmap)
+        self.label_15.setScaledContents(True)
+
+        pixmap = QPixmap(image_name[3])
+        self.label_16.setPixmap(pixmap)
+        self.label_16.setScaledContents(True)
+
+        pixmap = QPixmap(image_name[4])
+        self.label_17.setPixmap(pixmap)
+        self.label_17.setScaledContents(True)
+
 
 
 class Scaler(keras.layers.Layer):
