@@ -61,22 +61,24 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         ####### CLEAR #######
         self.textBrowser.append('')
         ####### ALGORITHM ########
-        global LCE
-        LCE = Learned_Latent_Class_Embedding([IMAGE_PATH])
-        list_LCE = list(LCE)
-        print_LCE = ''
-        for i in list_LCE[0]:
-            print_LCE += str(round(i,3)) + '\n'
-        self.textBrowser.append(print_LCE)
+        if IMAGE_PATH != '':
+            global LCE
+            LCE = Learned_Latent_Class_Embedding([IMAGE_PATH])
+            list_LCE = list(LCE)
+            print_LCE = ''
+            for i in list_LCE[0]:
+                print_LCE += str(round(i,3)) + '\n'
+            self.textBrowser.append(print_LCE)
 
     def aligning(self):
         ####### CLEAR #######
         self.textBrowser_2.append('')
 
         ####### ALGORITHM ########
-        CE = Aligning(LCE)
-        print(type(CE))
-        print(CE)
+        if LCE != []:
+            CE = Aligning(LCE)
+            print(type(CE))
+            print(CE)
 
     def filiting(self):
         pass
