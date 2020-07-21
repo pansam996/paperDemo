@@ -27,11 +27,11 @@ from keras.models import Model, load_model
 # ---------------------------------------------------------------------------------------------------------------- #
 # SET HYPERPARAMETERS
 
-global NUM_CLASS, NUM_ATTR, DATASET_PATH, IMAGE_PATH, IMAGE_SIZE
 NUM_CLASS = 38
 NUM_ATTR = 35
 DATASET_PATH = '/home/uscc/New Plant Diseases Dataset(Augmented)/'
-IMAGE_PATH = '/home/uscc/New Plant Diseases Dataset(Augmented)/train/Apple___Apple_scab/0a5e9323-dbad-432d-ac58-d291718345d9___FREC_Scab 3417_90deg.JPG'
+# IMAGE_PATH = '/home/uscc/New Plant Diseases Dataset(Augmented)/train/Apple___Apple_scab/0a5e9323-dbad-432d-ac58-d291718345d9___FREC_Scab 3417_90deg.JPG'
+IMAGE_PATH = ''
 IMAGE_SIZE = 128
 
 class MainWindow(QMainWindow, Ui_MainWindow):
@@ -47,12 +47,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.pushButton_4.clicked.connect(self.filiting)
 
     def loadTestPic(self):
-        global filePath
-        filePath, filetype = QFileDialog.getOpenFileName(self,
+        global IMAGE_PATH
+        IMAGE_PATH, filetype = QFileDialog.getOpenFileName(self,
                   "選取檔案",
-                  "./",
+                  DATASET_PATH,
                   "All Files (*);;")  #設定副檔名過濾,注意用雙分號間隔
-        pixmap = QPixmap(filePath)
+        pixmap = QPixmap(IMAGE_PATH)
         self.label.setPixmap(pixmap)
         self.label.setScaledContents(True)
 
@@ -60,7 +60,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         ####### CLEAR #######
         self.textBrowser.append('')
         ####### ALGORITHM ########
-        Learned_Latent_Class_Embedding([filePath])
+        LCE = Learned_Latent_Class_Embedding([IMAGE_PATH])
+        print(LCE)
+        # self.textBrowser.append(LCE)
 
     def aligning(self):
         self.textBrowser_2.append('')
