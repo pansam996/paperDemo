@@ -234,7 +234,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <pointsize>13</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -581,7 +581,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <pointsize>13</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
