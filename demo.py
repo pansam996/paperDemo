@@ -61,8 +61,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.textBrowser.append('')
         ####### ALGORITHM ########
         LCE = Learned_Latent_Class_Embedding([IMAGE_PATH])
-        print(LCE)
-        # self.textBrowser.append(LCE)
+        print_LCE = ''
+        for i in LCE[0]:
+            print_LCE += i + '\n'
+        self.textBrowser.append(print_LCE)
 
     def aligning(self):
         self.textBrowser_2.append('')
