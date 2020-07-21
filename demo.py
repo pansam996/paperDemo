@@ -101,27 +101,29 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         tree = KDTree(class_attr)
         dist_5, index_5 = tree.query(CE, k=5)
-        pred_labels = [classname[index] for index in index_5[0]]
+        pred_labels = [dic_class2name[index] for index in index_5[0]]
         print(pred_labels)
         print(true_label)
 
         ##query five closest image
+        SAMPLE_SIZE = 50
         cand_list = []
         for i in range(classname.shape[0]):
             imgDir = DATASET_PATH + 'train/' + classname.loc[i][1]
             imgs = os.listdir(imgDir)
             indices = list(range(500))
             np.random.shuffle(indices)
-            for i in range(10):
+            for i in range(SAMPLE_SIZE):
                 cand_list.append(imgDir + '/' +imgs[indices[i]])
+        image_name_list = cand_list
         cand_list = Learned_Latent_Class_Embedding(cand_list)
         cand_list = Aligning(cand_list)
 
         tree = KDTree(cand_list)
         dist_5, index_5 = tree.query(CE, k=5)
-        pred_images = [classname[int(math.floor(index/10))] for index in index_5[0]]
+        pred_images = [dic_class2name[int(math.floor(index/SAMPLE_SIZE))] for index in index_5[0]]
         print(pred_images)
-        image_name = [cand_list[index] for index in index_5[0]]
+        image_name = [image_name_list[index] for index in index_5[0]]
         print(image_name)
 
 
