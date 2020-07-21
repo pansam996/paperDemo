@@ -38,9 +38,9 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>20</y>
+       <y>80</y>
        <width>281</width>
-       <height>421</height>
+       <height>301</height>
       </rect>
      </property>
      <property name="layoutDirection">
@@ -337,9 +337,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>30</x>
         <y>10</y>
-        <width>201</width>
+        <width>241</width>
         <height>231</height>
        </rect>
       </property>
@@ -395,9 +395,9 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>10</y>
+        <y>20</y>
         <width>121</width>
-        <height>131</height>
+        <height>121</height>
        </rect>
       </property>
       <property name="layoutDirection">
@@ -452,9 +452,9 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>10</y>
+        <y>20</y>
         <width>121</width>
-        <height>131</height>
+        <height>121</height>
        </rect>
       </property>
       <property name="layoutDirection">
@@ -509,9 +509,9 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>10</y>
+        <y>20</y>
         <width>121</width>
-        <height>131</height>
+        <height>121</height>
        </rect>
       </property>
       <property name="layoutDirection">
@@ -566,9 +566,9 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>10</y>
+        <y>20</y>
         <width>121</width>
-        <height>131</height>
+        <height>121</height>
        </rect>
       </property>
       <property name="layoutDirection">
