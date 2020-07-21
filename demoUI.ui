@@ -191,7 +191,7 @@
     <property name="geometry">
      <rect>
       <x>600</x>
-      <y>370</y>
+      <y>360</y>
       <width>231</width>
       <height>141</height>
      </rect>
@@ -235,29 +235,6 @@ p, li { white-space: pre-wrap; }
      <property name="font">
       <font>
        <pointsize>13</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Query five cloest classes</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_10">
-     <property name="geometry">
-      <rect>
-       <x>230</x>
-       <y>30</y>
-       <width>211</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
