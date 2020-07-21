@@ -107,7 +107,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         num = 1
         res = ''
         for i in pred_labels:
-            res += str(num) + '. ' + i
+            res += str(num) + '. ' + i + '\n'
+            num += 1
         self.textBrowser_3.append(res)
 
         ##query five closest image
