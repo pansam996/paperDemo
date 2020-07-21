@@ -37,9 +37,9 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>10</x>
        <y>20</y>
-       <width>261</width>
+       <width>281</width>
        <height>421</height>
       </rect>
      </property>
@@ -57,7 +57,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>470</y>
+       <y>480</y>
        <width>281</width>
        <height>41</height>
       </rect>
@@ -101,7 +101,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>13</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -116,15 +116,15 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>20</x>
       <y>10</y>
-      <width>191</width>
+      <width>301</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>13</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -211,7 +211,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>13</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -273,7 +273,7 @@ p, li { white-space: pre-wrap; }
       <x>630</x>
       <y>60</y>
       <width>231</width>
-      <height>101</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -288,7 +288,7 @@ p, li { white-space: pre-wrap; }
        <x>10</x>
        <y>10</y>
        <width>211</width>
-       <height>81</height>
+       <height>91</height>
       </rect>
      </property>
      <property name="html">

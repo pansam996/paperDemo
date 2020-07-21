@@ -23,6 +23,17 @@ from keras import backend as K
 from keras.utils import to_categorical
 from keras.models import Model, load_model
 
+# ---------------------------------------------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------------------------------------------- #
+# SET HYPERPARAMETERS
+
+global NUM_CLASS, NUM_ATTR, DATASET_PATH, IMAGE_PATH, IMAGE_SIZE
+NUM_CLASS = 38
+NUM_ATTR = 35
+DATASET_PATH = '/home/uscc/New Plant Diseases Dataset(Augmented)/'
+IMAGE_PATH = '/home/uscc/New Plant Diseases Dataset(Augmented)/train/Apple___Apple_scab/0a5e9323-dbad-432d-ac58-d291718345d9___FREC_Scab 3417_90deg.JPG'
+IMAGE_SIZE = 128
+
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
         super(MainWindow, self).__init__(parent)
