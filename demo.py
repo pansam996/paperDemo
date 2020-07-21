@@ -101,7 +101,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         tree = KDTree(class_attr)
         dist_5, index_5 = tree.query(CE, k=5)
-        pred_labels = [classnames[index] for index in index_5[0]]
+        pred_labels = [classname[index] for index in index_5[0]]
         print(pred_labels)
         print(true_label)
 
