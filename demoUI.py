@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         self.label_9.setFont(font)
         self.label_9.setObjectName("label_9")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(340, 10, 251, 41))
+        self.pushButton_2.setGeometry(QtCore.QRect(340, 10, 251, 31))
         font = QtGui.QFont()
         font.setPointSize(13)
         font.setBold(True)
@@ -220,8 +220,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "DEMO"))
         self.label.setText(_translate("MainWindow", "test picture"))
         self.label_9.setText(_translate("MainWindow", "Predict Class : "))
-        self.pushButton_2.setText(_translate("MainWindow", "Learned Latent\n"
-" Class Embedding"))
+        self.pushButton_2.setText(_translate("MainWindow", "Learned Latent Class Embedding"))
         self.pushButton.setText(_translate("MainWindow", "Load Test Picture"))
         self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"

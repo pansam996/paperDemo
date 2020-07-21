@@ -96,7 +96,7 @@
       <x>340</x>
       <y>10</y>
       <width>251</width>
-      <height>41</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -110,8 +110,7 @@
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="text">
-     <string>Learned Latent
- Class Embedding</string>
+     <string>Learned Latent Class Embedding</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
