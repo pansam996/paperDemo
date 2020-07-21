@@ -30,7 +30,6 @@ from keras.models import Model, load_model
 NUM_CLASS = 38
 NUM_ATTR = 35
 DATASET_PATH = '/home/uscc/New Plant Diseases Dataset(Augmented)/'
-# IMAGE_PATH = '/home/uscc/New Plant Diseases Dataset(Augmented)/train/Apple___Apple_scab/0a5e9323-dbad-432d-ac58-d291718345d9___FREC_Scab 3417_90deg.JPG'
 IMAGE_PATH = ''
 IMAGE_SIZE = 128
 LCE = []
