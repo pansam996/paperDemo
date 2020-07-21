@@ -64,7 +64,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         LCE = list(LCE)
         print_LCE = ''
         for i in LCE[0]:
-            print_LCE += str(i)[:3] + '\n'
+            print_LCE += str(round(i,3)) + '\n'
         self.textBrowser.append(print_LCE)
 
     def aligning(self):
