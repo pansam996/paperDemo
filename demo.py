@@ -34,6 +34,7 @@ DATASET_PATH = '/home/uscc/New Plant Diseases Dataset(Augmented)/'
 IMAGE_PATH = ''
 IMAGE_SIZE = 128
 LCE = []
+CE = []
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
@@ -77,8 +78,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         ####### ALGORITHM ########
         if LCE != []:
             CE = Aligning(LCE)
-            print(type(CE))
-            print(CE)
+            list_CE = list(CE)
+            print_CE = ''
+            for i in list_CE[0]:
+                print_CE += str(round(i,3)) + '\n'
+            self.textBrowser_2.append(print_CE)
 
     def filiting(self):
         pass
