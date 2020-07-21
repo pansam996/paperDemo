@@ -353,9 +353,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>40</x>
         <y>150</y>
-        <width>201</width>
+        <width>171</width>
         <height>20</height>
        </rect>
       </property>
@@ -367,7 +367,30 @@ p, li { white-space: pre-wrap; }
        </font>
       </property>
       <property name="text">
-       <string>2. Class B</string>
+       <string>Class B</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>2. </string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -411,9 +434,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>40</x>
         <y>150</y>
-        <width>201</width>
+        <width>171</width>
         <height>20</height>
        </rect>
       </property>
@@ -425,7 +448,30 @@ p, li { white-space: pre-wrap; }
        </font>
       </property>
       <property name="text">
-       <string>3. Class C</string>
+       <string>Class C</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>3. </string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -469,9 +515,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>40</x>
         <y>150</y>
-        <width>201</width>
+        <width>171</width>
         <height>20</height>
        </rect>
       </property>
@@ -483,7 +529,30 @@ p, li { white-space: pre-wrap; }
        </font>
       </property>
       <property name="text">
-       <string>5. Class E</string>
+       <string>Class E</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>5.</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -527,9 +596,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>40</x>
         <y>150</y>
-        <width>211</width>
+        <width>171</width>
         <height>20</height>
        </rect>
       </property>
@@ -541,7 +610,30 @@ p, li { white-space: pre-wrap; }
        </font>
       </property>
       <property name="text">
-       <string>4. Class D</string>
+       <string>Class D</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>4. </string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
