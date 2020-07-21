@@ -61,7 +61,7 @@ class Ui_MainWindow(object):
         self.pushButton.setFocusPolicy(QtCore.Qt.NoFocus)
         self.pushButton.setObjectName("pushButton")
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_3.setGeometry(QtCore.QRect(410, 330, 113, 32))
+        self.pushButton_3.setGeometry(QtCore.QRect(422, 330, 91, 32))
         font = QtGui.QFont()
         font.setPointSize(13)
         font.setBold(True)

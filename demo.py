@@ -33,6 +33,7 @@ DATASET_PATH = '/home/uscc/New Plant Diseases Dataset(Augmented)/'
 # IMAGE_PATH = '/home/uscc/New Plant Diseases Dataset(Augmented)/train/Apple___Apple_scab/0a5e9323-dbad-432d-ac58-d291718345d9___FREC_Scab 3417_90deg.JPG'
 IMAGE_PATH = ''
 IMAGE_SIZE = 128
+LCE = []
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
@@ -60,19 +61,22 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         ####### CLEAR #######
         self.textBrowser.append('')
         ####### ALGORITHM ########
+        global LCE
         LCE = Learned_Latent_Class_Embedding([IMAGE_PATH])
-        LCE = list(LCE)
+        list_LCE = list(LCE)
         print_LCE = ''
-        for i in LCE[0]:
+        for i in list_LCE[0]:
             print_LCE += str(round(i,3)) + '\n'
         self.textBrowser.append(print_LCE)
 
     def aligning(self):
+        ####### CLEAR #######
         self.textBrowser_2.append('')
-        result = ''
-        for i in range(1,30,2):
-            result += str(i) + '\n'
-        self.textBrowser_2.append(result)
+
+        ####### ALGORITHM ########
+        CE = Aligning(LCE)
+        print(type(CE))
+        print(CE)
 
     def filiting(self):
         pass
@@ -172,6 +176,25 @@ def Learned_Latent_Class_Embedding(path_list):
     plant_LCE = plant_enc.predict(data)
 
     return plant_LCE
+
+def Aligning(plant_LCE):
+    #use model to convert LCE to CE
+    learned_enc = load_model('/home/uscc/cvamc/model/plant/learned_encoder.h5', custom_objects={'Scaler': Scaler, 'Sampling': Sampling})
+    attr_dec = load_model('/home/uscc/cvamc/model/plant/attr_decoder.h5', custom_objects={'Scaler': Scaler, 'Sampling': Sampling})
+
+    for i in range(len(plant_LCE)):
+        for j in range(len(plant_LCE[0])):
+            if plant_LCE[i][j] < 1e-5:
+                plant_LCE[i][j] = 0.0
+    latent = learned_enc.predict(plant_LCE)
+
+    for i in range(len(latent)):
+        for j in range(len(latent[0])):
+            if latent[i][j] < 1e-5:
+                latent[i][j] = 0.0
+    plant_CE = attr_dec.predict(latent)
+
+    return plant_CE
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
