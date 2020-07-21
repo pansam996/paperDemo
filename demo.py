@@ -131,10 +131,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         pred_images = [dic_class2name[int(math.floor(index/SAMPLE_SIZE))] for index in index_5[0]]
         # print(pred_images)
         self.label_2.setText('1. '+pred_images[0])
-        self.label_5.setText('2. '+pred_images[1])
-        self.label_6.setText('3. '+pred_images[2])
-        self.label_7.setText('4. '+pred_images[3])
-        self.label_8.setText('5. '+pred_images[4])
+        self.label_5.setText(pred_images[1])
+        self.label_6.setText(pred_images[2])
+        self.label_7.setText(pred_images[3])
+        self.label_8.setText(pred_images[4])
 
         image_name = [image_name_list[index] for index in index_5[0]]
         # print(image_name)
