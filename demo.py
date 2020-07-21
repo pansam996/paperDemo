@@ -85,7 +85,43 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.textBrowser_2.append(print_CE)
 
     def filiting(self):
-        pass
+        #load class name and make map dict
+        classname = pd.read_csv(DATASET_PATH+'classes.txt',header=None,sep = '\t')
+        dic_class2name = {classname.index[i]:classname.loc[i][1] for i in range(classname.shape[0])}
+        dic_name2class = {classname.loc[i][1]:classname.index[i] for i in range(classname.shape[0])}
+        #load arry = class x attr
+        class_attr = np.load(DATASET_PATH+'class_attr.npy')
+        #query test image true label ( train/['label']/ )
+        regex = re.compile(r'train/([A-Za-z()_]*)/')
+        match = regex.search(IMAGE_PATH)
+        true_label = match.group(1)
+
+        ##query five closest class
+
+        tree = KDTree(class_attr)
+        dist_5, index_5 = tree.query(CE, k=5)
+        pred_labels = [classnames[index] for index in index_5[0]]
+        print(pred_labels)
+        print(true_label)
+
+        ##query five closest image
+        cand_list = []
+        for i in range(classname.shape[0]):
+            imgDir = DATASET_PATH + 'train/' + classname.loc[i][1]
+            imgs = os.listdir(imgDir)
+            indices = list(range(500))
+            np.random.shuffle(indices)
+            for i in range(10):
+                cand_list.append(imgDir + '/' +imgs[indices[i]])
+        cand_list = Learned_Latent_Class_Embedding(cand_list)
+        cand_list = Aligning(cand_list)
+
+        tree = KDTree(cand_list)
+        dist_5, index_5 = tree.query(CE, k=5)
+        pred_images = [classnames[int(math.floor(index/10))] for index in index_5[0]]
+        print(pred_images)
+        image_name = [cand_list[index] for index in index_5[0]]
+        print(image_name)
 
 
 class Scaler(keras.layers.Layer):
