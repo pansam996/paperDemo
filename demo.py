@@ -101,8 +101,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         tree = KDTree(class_attr)
         dist_5, index_5 = tree.query(CE, k=5)
         pred_labels = [dic_class2name[index] for index in index_5[0]]
-        print(pred_labels)
-        print(true_label)
+
+        # print(pred_labels)
+        # print(true_label)
+        num = 1
+        res = ''
+        for i in pred_labels:
+            res += str(num) + '. ' + i
+        self.textBrowser_3.append(res)
 
         ##query five closest image
         SAMPLE_SIZE = 50
