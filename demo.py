@@ -119,7 +119,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         tree = KDTree(cand_list)
         dist_5, index_5 = tree.query(CE, k=5)
-        pred_images = [classnames[int(math.floor(index/10))] for index in index_5[0]]
+        pred_images = [classname[int(math.floor(index/10))] for index in index_5[0]]
         print(pred_images)
         image_name = [cand_list[index] for index in index_5[0]]
         print(image_name)
