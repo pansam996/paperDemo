@@ -59,7 +59,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def learnedLatentClassEmbedding(self):
         ####### CLEAR #######
-        self.textBrowser.append('')
+        self.textBrowser.clear()
         ####### ALGORITHM ########
         if IMAGE_PATH != '':
             global LCE
@@ -72,7 +72,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def aligning(self):
         ####### CLEAR #######
-        self.textBrowser_2.append('')
+        self.textBrowser_2.clear()
 
         ####### ALGORITHM ########
         if LCE != []:
@@ -104,6 +104,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # print(pred_labels)
         # print(true_label)
+        self.textBrowser_3.clear()
         num = 1
         res = ''
         for i in pred_labels:
