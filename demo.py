@@ -77,6 +77,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         ####### ALGORITHM ########
         if LCE != []:
+            global CE
             CE = Aligning(LCE)
             list_CE = list(CE)
             print_CE = ''
