@@ -314,6 +314,9 @@ p, li { white-space: pre-wrap; }
       <property name="alignment">
        <set>Qt::AlignCenter</set>
       </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
      </widget>
     </widget>
     <widget class="QFrame" name="frame_8">
@@ -371,6 +374,9 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLabel" name="label_10">
@@ -453,6 +459,9 @@ p, li { white-space: pre-wrap; }
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
       </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QLabel" name="label_13">
       <property name="geometry">
@@ -534,6 +543,9 @@ p, li { white-space: pre-wrap; }
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
       </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QLabel" name="label_19">
       <property name="geometry">
@@ -614,6 +626,9 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLabel" name="label_18">
